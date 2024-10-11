@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amal Tom Parakkaden</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Add transparency for text readability */
+            border: 2px solid #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            text-align: center; /* Center text within container */
+        }
+        h1, p {
+            font-family: 'Courier New', Courier, monospace;
+            color: #fff;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .menu a {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            color: #0f0;
+            text-decoration: none;
+            background-color: #000;
+            border: 2px solid #fff;
+            border-radius: 6px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s, color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .menu a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            border: 2px solid #fff;
+            border-radius: 6px;
+            color: #0f0;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #0f0;
+            color: #000;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            color: #0f0;
+            text-decoration: none;
+            border-radius: 6px;
+            padding: 5px 10px;
+            margin: 0 5px;
+            transition: background-color 0.3s, color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .social-links a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .message-box::placeholder {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href="index.html">Home</a>
+        </div>
+        <h1>Contact Me</h1>
+        
+        <form action="submitform.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" class="message-box" placeholder="Your Message *" rows="5" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+        
+        
+        <p style="color: white;">Email: amaltomparakkaden@gmail.com<br>
+           Phone: +91 8137819187</p>
+   
+        <div class="social-links">
+            <a href="https://github.com/amaltom06" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/amal-tom-parakkaden/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/_amaltom/" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
